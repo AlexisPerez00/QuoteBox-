@@ -1,38 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Lobster+Two&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  place-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  /* background-image: url(https://es.jumabu.com/images/descarga-pared-piso-madera-superficie-envejecida-realista_107791-449-vectores-jumabu.jpg); */
+	background-repeat: no-repeat; 
+	background-size: 100% 100%;
+    background-image: url(https://www.hogar.mapfre.es/media/2018/08/paredes_de_madera_pros_y_contras-1100x408.jpg);
+}
+
+body {
+  color: white;
+
+}
+
+.container {
+  width: 70%;
+  font-size: 30px;
+  height: 50vh;
   text-align: center;
+  background-image: url(https://bgwall.net/wp-content/uploads/2014/09/books-at-the-library-wallpaper-picture.jpg);
+  z-index: 1;
+  border: solid rgb(252, 211, 129);
+  box-shadow: rgb(100, 77, 0) 0px 20px 30px -10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container h2 {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.quote-container {
+  width: 100%;
+  height: 50%;
+  font-family: 'Cinzel', serif;
+  font-size: 25px;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color:  rgba(46, 44, 39, 0.357);
+
 }
 
-.App-link {
-  color: #61dafb;
+.quote-container h4 {
+  padding: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.quote-container h5 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 30px;
+  padding: 15px;
+}
+
+button {
+  width: 15%;
+  position:absolute;
+  bottom: 25%;
+  color: rgb(191, 191, 58);
+  background-color: rgb(34, 21, 3);
+  padding: 10px;
+  font-size: x-large;
+  cursor: pointer;
 }
